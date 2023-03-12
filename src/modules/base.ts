@@ -14,8 +14,8 @@ export default class Mexc {
     private readonly apiKey: string;
     private readonly apiSecret: string;
 
-    constructor(options: IOptions) {
-        const {apiKey, apiSecret} = options
+    constructor(options?: IOptions) {
+        const {apiKey = '', apiSecret = ''} = options || {}
         this.apiKey = apiKey
         this.apiSecret = apiSecret
         return this;

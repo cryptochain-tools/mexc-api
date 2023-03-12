@@ -2,8 +2,8 @@ import Mexc, {IOptions} from "./base";
 
 export default class Contract extends Mexc {
     private contractBaseUrl:string = 'https://contract.mexc.com/api/v1/';
-    constructor({apiKey, apiSecret}: IOptions) {
-        super({apiKey, apiSecret});
+    constructor(options?: IOptions) {
+        super(options);
         return this;
     }
 

@@ -3,8 +3,8 @@ import Mexc, {IOptions} from "./base";
 export default class Spot extends Mexc {
     spotBaseUrlV2:string='https://www.mexc.com/open/api/v2/';
     spotBaseUrlV3:string='https://api.mexc.com/api/v3/';
-    constructor({apiKey, apiSecret}: IOptions) {
-        super({apiKey, apiSecret});
+    constructor(options?: IOptions) {
+        super(options);
         return this;
     }
 
