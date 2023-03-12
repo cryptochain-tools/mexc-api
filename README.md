@@ -1,10 +1,9 @@
-#### Installation: **`npm install node-mexc-api`**
-[![npm install node-mexc-api](https://nodei.co/npm/node-mexc-api.png?mini=true)](https://npmjs.org/package/node-mexc-api)
+#### Installation: **`npm install mexc-api`**
+[![npm install mexc-api](https://nodei.co/npm/node-mexc-api.png?mini=true)](https://npmjs.org/package/mexc-api)
 
 #### Getting started
 ```typescript
-const Mexc = require('node-mexc-api').default;
-require("dotenv").config();
+import Mexc from 'mexc-api'
 
 
 const mexc = new Mexc({
