@@ -1,5 +1,5 @@
 #### Installation: **`npm install mexc-api`**
-[![npm install mexc-api](https://nodei.co/npm/node-mexc-api.png?mini=true)](https://npmjs.org/package/mexc-api)
+[![npm install mexc-api](https://nodei.co/npm/mexc-api.png?mini=true)](https://npmjs.org/package/mexc-api)
 
 #### Getting started
 ```typescript
