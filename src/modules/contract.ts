@@ -99,7 +99,7 @@ export default class Contract extends Mexc {
         return this.publicRequestV3('GET', `${this.contractBaseUrl}contract/risk_reverse`, params)
     }
 
-    riskReverseHistory(params: { symbol: string, page_num: string, page_size: string}) {
+    riskReverseHistory(params: { symbol: string, page_num: number, page_size: number}) {
         return this.publicRequestV3(
             'GET',
             `${this.contractBaseUrl}contract/risk_reverse/history`,
@@ -107,7 +107,7 @@ export default class Contract extends Mexc {
         )
     }
 
-    fundingRateHistory(params: { symbol: string, page_num: string, page_size: string}) {
+    fundingRateHistory(params: { symbol: string, page_num: number, page_size: number}) {
         return this.publicRequestV3(
             'GET',
             `${this.contractBaseUrl}contract/funding_rate/history`,
@@ -162,7 +162,7 @@ export default class Contract extends Mexc {
         )
     }
 
-    openOrders(params: {symbol: string, page_num:string, page_size: string}) {
+    openOrders(params: {symbol: string, page_num:string, page_size: number}) {
         return this.signRequestV2(
             'GET',
             `${this.contractBaseUrl}private/order/list/open_orders/{symbol}`,
@@ -170,7 +170,7 @@ export default class Contract extends Mexc {
         )
     }
 
-    historyOrders(params: {symbol: string, states: string, category: number, start_time: string, end_time: string, side: string, page_num: string, page_size: string}) {
+    historyOrders(params: {symbol: string, states: string, category: number, start_time: string, end_time: string, side: string, page_num: number, page_size: number}) {
         return this.signRequestV2(
             'GET',
             `${this.contractBaseUrl}private/order/list/history_orders`,
@@ -210,7 +210,7 @@ export default class Contract extends Mexc {
         )
     }
 
-    orderDeals(params : {symbol: string, start_time: string, end_time: string, page_num:string, page_size: string}) {
+    orderDeals(params : {symbol: string, start_time: string, end_time: string, page_num:string, page_size: number}) {
         return this.signRequestV2(
             'GET',
             `${this.contractBaseUrl}private/order/list/order_deals`,
@@ -218,7 +218,7 @@ export default class Contract extends Mexc {
         )
     }
 
-    planOrder(params : {symbol: string, states: string, start_time: string, end_time: string, page_num:string, page_size: string}) {
+    planOrder(params : {symbol: string, states: string, start_time: string, end_time: string, page_num:string, page_size: number}) {
         return this.signRequestV2(
             'GET',
             `${this.contractBaseUrl}private/planorder/list/orders`,
@@ -226,7 +226,7 @@ export default class Contract extends Mexc {
         )
     }
 
-    stopOrder(params : {symbol: string, is_finished: string, start_time: string, end_time: string, page_num:string, page_size: string}) {
+    stopOrder(params : {symbol: string, is_finished: string, start_time: string, end_time: string, page_num:string, page_size: number}) {
         return this.signRequestV2(
             'GET',
             `${this.contractBaseUrl}private/stoporder/list/orders`,
